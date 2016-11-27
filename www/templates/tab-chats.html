@@ -1,0 +1,19 @@
+<ion-view view-title="Clinics">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item  item-icon-right" style="background-color:#{{doctor.color}};" ng-repeat="doctor in doctors" type="item-text-wrap" href="#/tab/chats/{{doctor.id}}">
+
+        <h2>{{doctor.name}} <span style>  {{doctor.doctorname}}</span></h2>
+
+          <p>{{doctor.state}}</p>
+          <p>{{doctor.phone}}</p>
+        <p>{{doctor.lastText}}</p>
+          <img ng-src="{{doctor.image}}" width="100px" style="margin-top:1em !important;">
+            <img ng-src="{{doctor.image}}" width="100px" style="margin-top:1em !important;">
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
